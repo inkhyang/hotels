@@ -3,7 +3,6 @@ spring:
     enable: true
   jpa:
     database: postgresql
-    generate-ddl: true
     hibernate:
       ddl-auto: validate
     database-platform: org.hibernate.dialect.PostgreSQLDialect
