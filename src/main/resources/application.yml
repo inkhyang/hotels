@@ -1,11 +1,14 @@
 spring:
   flyway:
-    enabled: true
+    enable: true
   jpa:
-    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    database: postgresql
+    generate-ddl: true
     hibernate:
       ddl-auto: validate
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://snuffleupagus.db.elephantsql.com/xjhxkqaj?currentSchema=site
-  
+    url: jdbc:postgresql://localhost:5432/xjhxkqaj?currentSchema=public
+    password: postgres
+    username: postgres
